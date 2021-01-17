@@ -1,0 +1,295 @@
+/*
+Theme: Web Hosting
+Author: Web Team
+Version: 1.0.0
+
+
+------ Table of Content -------
+1. banner section
+2. pricing section
+*/
+
+
+/* =================== banner section start =================== */
+header{
+    background-color: #071315;
+    padding: 40px 0 120px;
+    overflow: hidden;
+}
+.header_text .header_description{
+    position: relative;
+    z-index: 2;
+}
+header .menu {
+    padding-top: 18px;
+}
+header .menu ul {
+    float: right;
+}
+header .menu ul li{
+    float: left;
+}
+header .menu ul li:not(:last-child) a{
+    margin: 0 27px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+header .menu ul li:not(:last-child):hover a{
+    color: #ffab47;
+}
+header .menu ul li:not(:last-child) a::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 0;
+    background-color: #ffab47;
+    top: 100%;
+    left: 50%;
+    transition: all .5s;
+    transform: translateX(-50%);
+}
+header .menu ul li:not(:last-child):hover a::after{
+    width: 100%;
+}
+header .menu ul li:last-child a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 13px 25px;
+    background-image: linear-gradient(140deg, #fa7236, #ff0566);
+    border-radius: 50px;
+    position: relative;
+}
+header .menu ul li:last-child a span{
+    position: relative;
+    z-index: 2;
+}
+header .menu ul li:last-child a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-image: linear-gradient(140deg, #ff0566, #fa7236);
+    opacity: 0;
+}
+header .menu ul li:last-child:hover a::after{
+    opacity: 1;
+}
+header .menu ul li:last-child a img{
+    height: 10px;
+    margin-left: 5px;
+}
+
+/* header container */
+header .header_text{
+    padding-top: 140px;
+}
+header .header_text h1{
+    font-size: 60px;
+    font-weight: 100;
+    color: transparent;
+    background-image: linear-gradient(to right, #ff0566 10%, #fa7236 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    line-height: 72px;
+    margin-bottom: 40px;
+}
+header .header_text p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 140px;
+}
+
+/* header form */
+header .header_search_form{
+    position: relative;
+}
+header .header_search_form input{
+    width: 100%;
+    border: 0;
+    padding: 25px 215px 25px 35px;
+    border-radius: 50px;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: white;
+}
+
+header .header_search_form button{
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    padding: 20px 30px;
+    background-color: #fc3d4d;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    color: #fff;
+    cursor: pointer;
+}
+header .header_search_form button:hover{
+    background-color: #fa7236;
+}
+
+/* header price */
+.header_price{
+    padding-top: 25px;
+}
+.header_price a.price_button,
+.header_price span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 25px;
+}
+.header_price a.price_button{
+    color: #fc3d4d;
+    border-bottom: 1px dotted #fc3d4d;
+    overflow: hidden;
+}
+.header_price a.price_button:hover{
+    color: #fa7236;
+}
+.header_price a.price_button:active i{
+    position: relative;
+    transform: translateX(50px);
+    opacity: 0;
+}
+/* header image */
+header .header_image{
+    position: relative;
+}
+header .header_image img{
+    position: absolute;
+    top: -225px;
+    left: -270px;
+}
+
+
+/* =================== banner section end =================== */
+
+/* =================== pricing section start =================== */
+.price{
+    background-color: #071315;
+    padding-bottom: 80px;
+}
+.price .container .col-1-of-4{
+    width: calc(100% / 4);
+}
+.price .single_pricing{
+    padding: 35px 35px 50px 50px;
+    background-image: linear-gradient(140deg, #049ec0, #04d4d5);
+    margin-bottom: 75px;
+    overflow: hidden;
+    transition: all .2s;
+}
+.price .single_pricing:hover{
+    transform: translateY(-5px);
+}
+
+.price .container .col-1-of-4:nth-child(2) .single_pricing{
+    background-image: linear-gradient(140deg, #f97337, #ff0b63);
+}
+.price .container .col-1-of-4:nth-child(3) .single_pricing{
+    background-image: linear-gradient(140deg, #bd63d9, #5c27fe);
+}
+.price .container .col-1-of-4:nth-child(4) .single_pricing{
+    background-image: linear-gradient(140deg, #ffcb52, #ff7b02);
+}
+.price .single_pricing .price_header{
+    display: flex;
+}
+.price .single_pricing .price_header .price_image,
+.price .single_pricing .price_header .price_header_text{
+    width: 50%;
+}
+.price .single_pricing .price_header .price_image img{
+    margin-left: -135px;
+    margin-top: -17px;
+}
+
+.price .single_pricing .price_header .price_header_text h3{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 13px;
+    padding-top: 20px;
+}
+.price .single_pricing .price_header .price_header_text p{
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    line-height: 20px;
+    margin-bottom: 45px;
+}
+
+.price .single_pricing .price_header .price_header_text h4{
+    font-weight: 100;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 7px;
+    line-height: 40px;
+}
+.price .single_pricing .price_header .price_header_text span{
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+}
+.price .single_pricing .price_body{
+    padding-top: 5px;
+}
+.price .single_pricing .price_body ul {
+    min-height: 200px;
+}
+.price .single_pricing .price_body ul li{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.price .single_pricing .price_body ul li:first-child{
+    font-weight: 700;
+}
+.price .single_pricing .price_body .btn-price{
+    padding: 18px 38px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 13px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.price .single_pricing .price_body .btn-price:hover{
+    background-color: #fff;
+    color: #fc3d4d;
+}
+.price .pricing_footer {
+    text-align: center;
+    color: #8998af;
+}
+.price .pricing_footer h4 span,
+.price .pricing_footer p i{
+    color: #fc3d4d;
+}
+.price .pricing_footer p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.price .pricing_footer h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+/* =================== pricing section end =================== */
