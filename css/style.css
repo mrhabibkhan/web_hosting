@@ -7,6 +7,8 @@ Version: 1.0.0
 ------ Table of Content -------
 1. banner section
 2. pricing section
+3. plan part
+4. features part
 */
 
 
@@ -293,3 +295,142 @@ header .header_image img{
     font-weight: 400;
 }
 /* =================== pricing section end =================== */
+
+
+
+/* =================== plan part start =================== */
+.plan{
+    background-color: #0d0f24;
+    padding: 50px 0; 
+}
+.plan .section_title h2{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.plan .single_plan {
+    padding: 8px 55px 8px 8px;
+    background-color: #262839;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.plan .single_plan i:not(.icon_right){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color: #353848;
+    text-align: center;
+    color: #04b3c8;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.plan .single_plan span{
+    color: #8998af;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.plan .single_plan i.icon_right{
+    color: #34b358;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+/* =================== plan part end =================== */
+
+
+/* =================== features part start =================== */
+.features{
+    padding: 50px 0;
+    background-color: #0d0f24; 
+}
+
+.common_section_title{
+    text-align: center;
+}
+.common_section_title h4{
+    text-transform: uppercase;
+    color: #fc3d4d;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 10px; 
+}
+.common_section_title h2{ 
+    color: #fff;
+    font-weight: 300; 
+    font-size: 34px;
+    margin-bottom: 20px; 
+}
+.common_section_title p{ 
+    color: rgba(255,255,255,.5);
+    font-weight: 400; 
+    font-size: 16px; 
+    margin-bottom: 70px;
+    line-height: 28px; 
+    padding:  0 170px;
+}
+
+.features .single_feature{
+    background-color: #221f3a;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.features .single_feature .feature_icon{
+    width: 230px; 
+    background-image: url(../images/feature_single_bg.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    text-align: center;
+} 
+ 
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 60px;
+    margin-left: 0;
+    background-image: linear-gradient(#ff0a64, #fa6b39);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 150px;
+}
+.features .single_feature .feature_description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+.features .single_feature .feature_description p{
+    color: #8998af;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+/* =================== features part end =================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

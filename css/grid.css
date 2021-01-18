@@ -37,9 +37,20 @@
     float: left;
 }
 
-[class^="col-"]:not(:last-child){
+ 
+
+.col-1-of-2:not(:nth-child(2n + 2)){
     margin-right: 30px;
 }
+
+.col-1-of-3:not(:nth-child(3n + 3)){
+    margin-right: 30px;
+}
+
+.col-1-of-4:not(:nth-child(4n + 4)){
+    margin-right: 30px;
+}
+
 
 
 body{
