@@ -9,6 +9,9 @@ Version: 1.0.0
 2. pricing section
 3. plan part
 4. features part
+5. loving section
+6. team section
+7. blog section 
 */
 
 
@@ -418,6 +421,136 @@ header .header_image img{
 }
 
 /* =================== features part end =================== */
+
+
+/* =================== loving section start =================== */
+.loving{
+    padding: 70px 0;
+    background-color: #0d0f24;
+}
+
+.loving .loving_image img{
+    width: 100%;
+}
+
+h2.underline_title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400; 
+    padding-bottom: 25px;
+    position: relative; 
+    margin-bottom: 25px;
+}
+h2.underline_title::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 100px;
+    background-color: #fc3d4d;
+    top: 100%;
+    left: 0;
+}
+
+.loving .loving_content{
+    padding-top: 60px;
+}
+.loving .loving_content p{
+    color: rgba(255,255,255,.5);
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+.loving .loving_options{
+    margin-top: 50px;
+}
+.loving .loving_options .loving_map img{
+    width: 100%;
+}
+.loving .loving_options ul li{
+    color: rgba(255,255,255,.5);
+    font-size: 15px;
+    line-height: 35px; 
+    font-weight: 400; 
+}
+.loving .loving_options ul li::before{
+    font-family: 'Font Awesome 5 Free';
+    content: "\f233";
+    display: inline-block;  
+    font-weight: 900;
+    color: rgba(255,255,255,.5);
+    margin-right: 13px;
+}
+
+
+
+/* =================== loving section end =================== */
+
+
+
+/* =================== team section start  =================== */
+.team{
+    padding: 70px 0;
+    background-color: #250d0f;
+}
+.single_team{
+    background-color: #170809;
+    padding: 100px 0;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* =================== team section end =================== */
+
+
+/* =================== blog section start  =================== */
+.blog{
+    padding: 70px 0;
+    background-color: #0e0505;
+}
+
+.blog .single_blog{
+    overflow: hidden;
+    position: relative;
+}
+.blog .single_blog img{
+    width: 100%;
+}
+.blog .single_blog .blog_categories{
+    position: absolute;
+    width: 100%;
+    padding: 10px; 
+    top: 0;
+    left: 0;
+}
+.blog .single_blog .blog_categories a{
+    padding: 6px 10px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #f9533b;
+    border-radius: 3px;
+}
+.blog .single_blog .blog_categories a.orange{
+    background-color: #fda400;
+}
+.blog .single_blog .blog_categories a.cayan{
+    background-color: #00a5bb;
+}
+.blog .single_blog .blog_info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 40px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.5) 10%, black 60%);
+    color: #fff; 
+}
+.blog .single_blog .blog_info h3{
+    margin-top: 15px;
+}
+/* =================== blog section end =================== */
 
 
 
